@@ -8,7 +8,7 @@ const MobileHeader = ({
   onSearchToggle,
   searchVisible,
 }) => (
-  <div className="md:hidden bg-white shadow-sm border-b border-gray-200 p-4 flex items-center justify-between">
+  <div className="md:hidden  p-4 flex items-center justify-between">
     {showBack && (
       <button onClick={onBack} className="mr-3 p-1 hover:bg-gray-100 rounded">
         <ChevronRight className="w-5 h-5" />

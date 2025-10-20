@@ -1,6 +1,6 @@
 import NoteCard from './NoteCard';
 const NotesSection = ({
-  title,
+  title = '',
   notes,
   selectedNote,
   onNoteClick,

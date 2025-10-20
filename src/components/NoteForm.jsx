@@ -1,7 +1,7 @@
 import { X } from 'lucide-react';
 
 const NoteForm = ({ note, onChange, onSubmit, onCancel, isMobile = false }) => (
-  <div className={isMobile ? 'p-4' : 'p-6'}>
+  <div className="p-6">
     {!isMobile && (
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-900">Add Note</h1>
@@ -14,7 +14,7 @@ const NoteForm = ({ note, onChange, onSubmit, onCancel, isMobile = false }) => (
     <div
       className={`lg:mx-52 lg:my-28 ${isMobile ? 'bg-white rounded-lg shadow-sm p-6' : ''}`}
     >
-      <div className="w-full lg:w-[600px] flex flex-col md:gap-10">
+      <div className="w-full lg:w-[600px] flex flex-col gap-9 md:gap-10">
         {isMobile && (
           <h1 className="text-2xl font-bold text-gray-900">Add Note</h1>
         )}
@@ -27,7 +27,7 @@ const NoteForm = ({ note, onChange, onSubmit, onCancel, isMobile = false }) => (
             value={note.title}
             onChange={(e) => onChange({ ...note, title: e.target.value })}
             placeholder="Add note title"
-            className="bg-[#F6F6F6] w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="bg-[#F6F6F6] w-full px-4 py-2  rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
         </div>
 
@@ -40,7 +40,7 @@ const NoteForm = ({ note, onChange, onSubmit, onCancel, isMobile = false }) => (
             value={note.author}
             onChange={(e) => onChange({ ...note, author: e.target.value })}
             placeholder="Author name"
-            className="bg-[#F6F6F6] w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="bg-[#F6F6F6] w-full px-4 py-2  rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
         </div>
 
@@ -53,7 +53,7 @@ const NoteForm = ({ note, onChange, onSubmit, onCancel, isMobile = false }) => (
             onChange={(e) => onChange({ ...note, content: e.target.value })}
             placeholder="Write your note here..."
             rows={10}
-            className="bg-[#F6F6F6] w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className={`${isMobile ? 'h-37' : ''} bg-[#F6F6F6] w-full px-4 py-2  rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500`}
           />
         </div>
 

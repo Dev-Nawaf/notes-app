@@ -11,7 +11,7 @@ const NoteCard = ({
     onClick={() => onClick(note)}
     className={`${
       isMobile
-        ? 'bg-white p-4 mb-2 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow'
+        ? 'bg-white py-4 mb-2 rounded-lg cursor-pointer active:bg-orange-100 touch-manipulation transition-shadow '
         : `p-3 mb-2 rounded-lg cursor-pointer transition-colors ${
             isSelected
               ? 'bg-orange-50 border-l-4 border-orange-500'
