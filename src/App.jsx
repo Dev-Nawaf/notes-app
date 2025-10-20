@@ -179,7 +179,7 @@ function App() {
                     onNoteClick={handleNoteSelect}
                     onNoteDelete={handleDeleteNote}
                     isMobile={true}
-                    titleColor="text-red-500"
+                    titleColor="text-orange-500"
                   />
                 )}
 
@@ -248,7 +248,7 @@ function App() {
                     selectedNote={selectedNote}
                     onNoteClick={setSelectedNote}
                     onNoteDelete={handleDeleteNote}
-                    titleColor="text-[#EC7160]"
+                    titleColor="text-orange-500"
                   />
                 </div>
               )}
