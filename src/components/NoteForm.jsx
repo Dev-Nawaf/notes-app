@@ -1,9 +1,9 @@
 import { X } from 'lucide-react';
 
 const NoteForm = ({ note, onChange, onSubmit, onCancel, isMobile = false }) => (
-  <div className="p-6">
+  <div className="flex flex-col p-6">
     {!isMobile && (
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-6 container">
         <h1 className="text-2xl font-bold text-gray-900">Add Note</h1>
         <button onClick={onCancel} className="p-2 hover:bg-gray-100 rounded-lg">
           <X className="w-5 h-5" />
@@ -12,9 +12,9 @@ const NoteForm = ({ note, onChange, onSubmit, onCancel, isMobile = false }) => (
     )}
 
     <div
-      className={`lg:mx-52 lg:my-28 ${isMobile ? 'bg-white rounded-lg shadow-sm p-6' : ''}`}
+      className={`container lg:my-28 ${isMobile ? 'bg-white rounded-lg shadow-sm p-6' : ''}`}
     >
-      <div className="w-full lg:w-[600px] flex flex-col gap-9 md:gap-10">
+      <div className="w-full lg:w-[600px] flex flex-col justify-self-center gap-9 md:gap-10">
         {isMobile && (
           <h1 className="text-2xl font-bold text-gray-900">Add Note</h1>
         )}

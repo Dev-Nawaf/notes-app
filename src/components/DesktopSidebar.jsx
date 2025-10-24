@@ -9,7 +9,7 @@ const DesktopSidebar = ({
   sidebarCollapsed,
   onToggleSidebar,
 }) => (
-  <div className="bg-[#F6F6F6] shadow-lg transition-all ation-300 flex flex-col relative w-3xs">
+  <div className="min-h-screen bg-[#F6F6F6] shadow-lg transition-all duration-300 flex flex-col relative md:w-48 lg:min-w-50">
     <div className="p-4 border-b border-gray-200">
       <div className="flex items-center  mb-4">
         <h1 className="text-xl font-bold text-orange-500">Notes App</h1>

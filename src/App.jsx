@@ -105,7 +105,7 @@ function App() {
             currentView={currentView}
           />
           <div
-            className={`m-2 ${mobileMenuOpen ? 'translate-x-64 transition-all duration-300' : ''}`}
+            className={`m-2 flex flex-col ${mobileMenuOpen ? 'translate-x-64 transition-all duration-300' : ''}`}
           >
             <MobileHeader
               title="Notes App"
@@ -220,7 +220,7 @@ function App() {
 
   // if not mobile then Desktop View well show
   return (
-    <div className="flex min-h-screen w-full bg-gray-50 ">
+    <div className="flex min-h-screen max-w-full bg-gray-50 ">
       <DesktopSidebar
         currentView={currentView}
         searchQuery={searchQuery}
